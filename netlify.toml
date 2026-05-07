@@ -1,0 +1,45 @@
+[build]
+  command = "npm install --prefix frontend && npm run build --prefix frontend"
+  publish = "frontend/dist"
+  functions = "netlify/functions"
+
+[dev]
+  command = "npm run dev --prefix frontend"
+  targetPort = 5173
+  port = 8888
+  publish = "frontend/dist"
+
+[[redirects]]
+  from = "/api/health"
+  to = "/.netlify/functions/health"
+  status = 200
+
+[[redirects]]
+  from = "/api/assets"
+  to = "/.netlify/functions/assets"
+  status = 200
+
+[[redirects]]
+  from = "/api/assets/:ticker/history"
+  to = "/.netlify/functions/asset-history?ticker=:ticker"
+  status = 200
+
+[[redirects]]
+  from = "/api/assets/:ticker"
+  to = "/.netlify/functions/asset-detail?ticker=:ticker"
+  status = 200
+
+[[redirects]]
+  from = "/api/ai/analyze"
+  to = "/.netlify/functions/ai-analyze"
+  status = 200
+
+[[redirects]]
+  from = "/api/ai/chat"
+  to = "/.netlify/functions/ai-chat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
