@@ -142,7 +142,7 @@ API povoľuje iba tickery `RDDT`, `BKNG`, `DUOL`, `NBIS`, `CMCSA`, `CRCL`.
 Nastavenia Netlify:
 
 - Base directory: nechajte prázdne, build beží z koreňa repozitára
-- Build command: `npm install --prefix frontend && npm run build --prefix frontend`
+- Build command: `npm install --prefix frontend --include=dev && npm run build --prefix frontend`
 - Publish directory: `frontend/dist`
 - Functions directory: `netlify/functions`
 
