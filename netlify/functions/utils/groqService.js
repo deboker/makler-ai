@@ -19,7 +19,7 @@ async function chatWithBroker(question) {
 
 async function askGroq(prompt, fallback) {
   const apiKey = process.env.GROQ_API_KEY;
-  const model = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
+  const model = process.env.GROQ_MODEL || "demo-groq-model";
 
   if (!apiKey || apiKey === "your_groq_api_key_here") {
     return { mode: "demo", model, answer: fallback };

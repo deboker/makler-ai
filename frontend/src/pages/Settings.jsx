@@ -54,7 +54,7 @@ export function Settings({ theme, setTheme }) {
                 <CheckCircle2 className="h-4 w-4 text-emerald-500" />
                 AI model
               </p>
-              <p className="mt-1 muted">Groq model cez premennú GROQ_MODEL, predvolene llama-3.1-8b-instant.</p>
+              <p className="mt-1 muted">Groq model sa načítava z premennej GROQ_MODEL v Netlify Environment Variables.</p>
             </div>
           </div>
         </section>

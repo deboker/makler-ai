@@ -106,7 +106,7 @@ Citlivé premenné nastavte iba v Netlify:
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
-GROQ_MODEL=llama-3.1-8b-instant
+GROQ_MODEL=your_groq_model_here
 MARKET_DATA_API_KEY=your_market_data_api_key_here
 NODE_ENV=production
 ```
@@ -152,7 +152,7 @@ Netlify Environment Variables:
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
-GROQ_MODEL=llama-3.1-8b-instant
+GROQ_MODEL=your_groq_model_here
 MARKET_DATA_API_KEY=your_market_data_api_key_here
 NODE_ENV=production
 ```
